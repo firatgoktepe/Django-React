@@ -74,7 +74,7 @@ const AddProject = ({ onAdd }) => {
           <h3 className="float-left">Yeni Proje Oluştur</h3>
           <Form onSubmit={onSubmit} className="mt-4">
           <Form.Group className="mb-3" controlId="formBasicName">
-              <Form.Label>{projectId && projectId + "-"}Proje Kodu</Form.Label>
+              <Form.Label>Proje Kodu</Form.Label>
               <Form.Control
                 type="text"
                 placeholder="Proje kodunu giriniz"
@@ -84,7 +84,7 @@ const AddProject = ({ onAdd }) => {
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formBasicName">
-              <Form.Label>{projectId && projectId + "-"}Proje Adı</Form.Label>
+              <Form.Label>Proje Adı</Form.Label>
               <Form.Control
                 type="text"
                 placeholder="Proje adını giriniz"
@@ -94,7 +94,7 @@ const AddProject = ({ onAdd }) => {
             </Form.Group>
             
             <Form.Group className="mb-3" controlId="formBasicName">
-              <Form.Label>{projectId && projectId + "-"}Yer</Form.Label>
+              <Form.Label>Yer</Form.Label>
               <Form.Control
                 type="text"
                 placeholder="Yeri giriniz"
@@ -104,7 +104,7 @@ const AddProject = ({ onAdd }) => {
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formBasicName">
-              <Form.Label>{projectId && projectId + "-"}Alan</Form.Label>
+              <Form.Label>Alan</Form.Label>
               <Form.Control
                 type="text"
                 placeholder="Alanı giriniz"
@@ -114,7 +114,7 @@ const AddProject = ({ onAdd }) => {
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formBasicName">
-              <Form.Label>{projectId && projectId + "-"}Yüzey İşlemi</Form.Label>
+              <Form.Label>Yüzey İşlemi</Form.Label>
               <Form.Control
                 type="text"
                 placeholder="Yüzey işlemini giriniz"
@@ -124,7 +124,7 @@ const AddProject = ({ onAdd }) => {
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formBasicName">
-              <Form.Label>{projectId && projectId + "-"}Boyama Yüzey alanı</Form.Label>
+              <Form.Label>Boyama Yüzey alanı</Form.Label>
               <Form.Control
                 type="text"
                 placeholder="Boyama yüzey alanını giriniz"
@@ -134,7 +134,7 @@ const AddProject = ({ onAdd }) => {
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formBasicName">
-              <Form.Label>{projectId && projectId + "-"}Teslim Tarihi</Form.Label>
+              <Form.Label>Teslim Tarihi</Form.Label>
               <Form.Control
                 type="text"
                 placeholder="Teslim tarihini giriniz"
@@ -144,7 +144,7 @@ const AddProject = ({ onAdd }) => {
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formBasicName">
-              <Form.Label>{projectId && projectId + "-"}RAL Kodu</Form.Label>
+              <Form.Label>RAL Kodu</Form.Label>
               <Form.Control
                 type="text"
                 placeholder="RAL kodunu giriniz"
@@ -154,7 +154,7 @@ const AddProject = ({ onAdd }) => {
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formBasicName">
-              <Form.Label>{projectId && projectId + "-"}PipeTime</Form.Label>
+              <Form.Label>PipeTime</Form.Label>
               <Form.Control
                 type="text"
                 placeholder="Enter PipeTime"
@@ -164,7 +164,7 @@ const AddProject = ({ onAdd }) => {
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formBasicName">
-              <Form.Label>{projectId && projectId + "-"}NodeTime</Form.Label>
+              <Form.Label>NodeTime</Form.Label>
               <Form.Control
                 type="text"
                 placeholder="Enter NodeTime"
@@ -174,7 +174,7 @@ const AddProject = ({ onAdd }) => {
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formBasicName">
-              <Form.Label>{projectId && projectId + "-"}PointTime</Form.Label>
+              <Form.Label>PointTime</Form.Label>
               <Form.Control
                 type="text"
                 placeholder="Enter PointTime"
@@ -184,7 +184,7 @@ const AddProject = ({ onAdd }) => {
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formBasicName">
-              <Form.Label>{projectId && projectId + "-"}PipeDict</Form.Label>
+              <Form.Label>PipeDict</Form.Label>
               <Form.Control
                 type="text"
                 placeholder="Enter PipeDict"
@@ -194,7 +194,7 @@ const AddProject = ({ onAdd }) => {
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formBasicName">
-              <Form.Label>{projectId && projectId + "-"}NodeDict</Form.Label>
+              <Form.Label>NodeDict</Form.Label>
               <Form.Control
                 type="text"
                 placeholder="Enter NodeDict"
@@ -204,7 +204,7 @@ const AddProject = ({ onAdd }) => {
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formBasicName">
-              <Form.Label>{projectId && projectId + "-"}PipePointDict</Form.Label>
+              <Form.Label>PipePointDict</Form.Label>
               <Form.Control
                 type="text"
                 placeholder="Enter PipePointDict"
@@ -260,7 +260,7 @@ const AddProject = ({ onAdd }) => {
               {projects.map((project, index) => {
                 return (
                   <tr key={index}>
-                    <th scope="row">{project.id}</th>
+                    <th scope="row">-</th>
                     <td>{project.code}</td>
                     <td> {project.name}</td>
                     <td>{project.location}</td>
