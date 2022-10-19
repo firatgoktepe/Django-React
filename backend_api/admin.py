@@ -1,8 +1,8 @@
 from django.contrib import admin
-from .models import Movie
+from .models import Project
 # Register your models here.
 
-class MovieAdmin(admin.ModelAdmin):
-    list = ('name', 'genre', 'starring')
+class ProjectAdmin(admin.ModelAdmin):
+    list = ('code', 'name', 'location', 'area', 'surface_app', 'point_area', 'delivery_date', 'ral_code', 'pipe_time', 'node_time', 'point_time', 'pipe_dict', 'node_dict', 'pipe_point_dict')
 
-    admin.site.register(Movie)
+    admin.site.register(Project)
