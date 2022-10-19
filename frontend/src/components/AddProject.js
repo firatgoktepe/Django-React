@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { ListGroup, Card, Button, Form } from "react-bootstrap";
 import API from "../API";
+import 'font-awesome/css/font-awesome.min.css';
 
 const AddProject = ({ onAdd }) => {
   const [projectId, setProjectId] = useState(null);
@@ -73,7 +74,7 @@ const AddProject = ({ onAdd }) => {
           <h3 className="float-left">Create a new Project</h3>
           <Form onSubmit={onSubmit} className="mt-4">
           <Form.Group className="mb-3" controlId="formBasicName">
-              <Form.Label>{projectId}Code</Form.Label>
+              <Form.Label>{projectId && projectId + "-"}Code</Form.Label>
               <Form.Control
                 type="text"
                 placeholder="Enter Code"
@@ -83,7 +84,7 @@ const AddProject = ({ onAdd }) => {
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formBasicName">
-              <Form.Label>{projectId}Name</Form.Label>
+              <Form.Label>{projectId && projectId + "-"}Name</Form.Label>
               <Form.Control
                 type="text"
                 placeholder="Enter Name"
@@ -93,7 +94,7 @@ const AddProject = ({ onAdd }) => {
             </Form.Group>
             
             <Form.Group className="mb-3" controlId="formBasicName">
-              <Form.Label>{projectId}Location</Form.Label>
+              <Form.Label>{projectId && projectId + "-"}Location</Form.Label>
               <Form.Control
                 type="text"
                 placeholder="Enter Location"
@@ -103,7 +104,7 @@ const AddProject = ({ onAdd }) => {
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formBasicName">
-              <Form.Label>{projectId}Area</Form.Label>
+              <Form.Label>{projectId && projectId + "-"}Area</Form.Label>
               <Form.Control
                 type="text"
                 placeholder="Enter Area"
@@ -113,7 +114,7 @@ const AddProject = ({ onAdd }) => {
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formBasicName">
-              <Form.Label>{projectId}SurfaceApp</Form.Label>
+              <Form.Label>{projectId && projectId + "-"}SurfaceApp</Form.Label>
               <Form.Control
                 type="text"
                 placeholder="Enter SurfaceApp"
@@ -123,7 +124,7 @@ const AddProject = ({ onAdd }) => {
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formBasicName">
-              <Form.Label>{projectId}PointArea</Form.Label>
+              <Form.Label>{projectId && projectId + "-"}PointArea</Form.Label>
               <Form.Control
                 type="text"
                 placeholder="Enter PointArea"
@@ -133,7 +134,7 @@ const AddProject = ({ onAdd }) => {
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formBasicName">
-              <Form.Label>{projectId}DeliveryDate</Form.Label>
+              <Form.Label>{projectId && projectId + "-"}DeliveryDate</Form.Label>
               <Form.Control
                 type="text"
                 placeholder="Enter DeliveryDate"
@@ -143,7 +144,7 @@ const AddProject = ({ onAdd }) => {
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formBasicName">
-              <Form.Label>{projectId}RalCode</Form.Label>
+              <Form.Label>{projectId && projectId + "-"}RalCode</Form.Label>
               <Form.Control
                 type="text"
                 placeholder="Enter RalCode"
@@ -153,7 +154,7 @@ const AddProject = ({ onAdd }) => {
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formBasicName">
-              <Form.Label>{projectId}PipeTime</Form.Label>
+              <Form.Label>{projectId && projectId + "-"}PipeTime</Form.Label>
               <Form.Control
                 type="text"
                 placeholder="Enter PipeTime"
@@ -163,7 +164,7 @@ const AddProject = ({ onAdd }) => {
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formBasicName">
-              <Form.Label>{projectId}NodeTime</Form.Label>
+              <Form.Label>{projectId && projectId + "-"}NodeTime</Form.Label>
               <Form.Control
                 type="text"
                 placeholder="Enter NodeTime"
@@ -173,7 +174,7 @@ const AddProject = ({ onAdd }) => {
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formBasicName">
-              <Form.Label>{projectId}PointTime</Form.Label>
+              <Form.Label>{projectId && projectId + "-"}PointTime</Form.Label>
               <Form.Control
                 type="text"
                 placeholder="Enter PointTime"
@@ -183,7 +184,7 @@ const AddProject = ({ onAdd }) => {
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formBasicName">
-              <Form.Label>{projectId}PipeDict</Form.Label>
+              <Form.Label>{projectId && projectId + "-"}PipeDict</Form.Label>
               <Form.Control
                 type="text"
                 placeholder="Enter PipeDict"
@@ -193,7 +194,7 @@ const AddProject = ({ onAdd }) => {
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formBasicName">
-              <Form.Label>{projectId}NodeDict</Form.Label>
+              <Form.Label>{projectId && projectId + "-"}NodeDict</Form.Label>
               <Form.Control
                 type="text"
                 placeholder="Enter NodeDict"
@@ -203,7 +204,7 @@ const AddProject = ({ onAdd }) => {
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formBasicName">
-              <Form.Label>{projectId}PipePointDict</Form.Label>
+              <Form.Label>{projectId && projectId + "-"}PipePointDict</Form.Label>
               <Form.Control
                 type="text"
                 placeholder="Enter PipePointDict"
