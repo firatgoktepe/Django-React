@@ -71,83 +71,83 @@ const AddProject = ({ onAdd }) => {
     <div className="container mt-5">
       <div className="row">
         <div className="col-md-4">
-          <h3 className="float-left">Create a new Project</h3>
+          <h3 className="float-left">Yeni Proje Oluştur</h3>
           <Form onSubmit={onSubmit} className="mt-4">
           <Form.Group className="mb-3" controlId="formBasicName">
-              <Form.Label>{projectId && projectId + "-"}Code</Form.Label>
+              <Form.Label>{projectId && projectId + "-"}Proje Kodu</Form.Label>
               <Form.Control
                 type="text"
-                placeholder="Enter Code"
+                placeholder="Proje kodunu giriniz"
                 value={code}
                 onChange={(e) => setCode(e.target.value)}
               />
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formBasicName">
-              <Form.Label>{projectId && projectId + "-"}Name</Form.Label>
+              <Form.Label>{projectId && projectId + "-"}Proje Adı</Form.Label>
               <Form.Control
                 type="text"
-                placeholder="Enter Name"
+                placeholder="Proje adını giriniz"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
               />
             </Form.Group>
             
             <Form.Group className="mb-3" controlId="formBasicName">
-              <Form.Label>{projectId && projectId + "-"}Location</Form.Label>
+              <Form.Label>{projectId && projectId + "-"}Yer</Form.Label>
               <Form.Control
                 type="text"
-                placeholder="Enter Location"
+                placeholder="Yeri giriniz"
                 value={location}
                 onChange={(e) => setLocation(e.target.value)}
               />
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formBasicName">
-              <Form.Label>{projectId && projectId + "-"}Area</Form.Label>
+              <Form.Label>{projectId && projectId + "-"}Alan</Form.Label>
               <Form.Control
                 type="text"
-                placeholder="Enter Area"
+                placeholder="Alanı giriniz"
                 value={area}
                 onChange={(e) => setArea(e.target.value)}
               />
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formBasicName">
-              <Form.Label>{projectId && projectId + "-"}SurfaceApp</Form.Label>
+              <Form.Label>{projectId && projectId + "-"}Yüzey İşlemi</Form.Label>
               <Form.Control
                 type="text"
-                placeholder="Enter SurfaceApp"
+                placeholder="Yüzey işlemini giriniz"
                 value={surface_app}
                 onChange={(e) => setSurfaceApp(e.target.value)}
               />
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formBasicName">
-              <Form.Label>{projectId && projectId + "-"}PointArea</Form.Label>
+              <Form.Label>{projectId && projectId + "-"}Boyama Yüzey alanı</Form.Label>
               <Form.Control
                 type="text"
-                placeholder="Enter PointArea"
+                placeholder="Boyama yüzey alanını giriniz"
                 value={point_area}
                 onChange={(e) => setPointArea(e.target.value)}
               />
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formBasicName">
-              <Form.Label>{projectId && projectId + "-"}DeliveryDate</Form.Label>
+              <Form.Label>{projectId && projectId + "-"}Teslim Tarihi</Form.Label>
               <Form.Control
                 type="text"
-                placeholder="Enter DeliveryDate"
+                placeholder="Teslim tarihini giriniz"
                 value={delivery_date}
                 onChange={(e) => setDeliveryDate(e.target.value)}
               />
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formBasicName">
-              <Form.Label>{projectId && projectId + "-"}RalCode</Form.Label>
+              <Form.Label>{projectId && projectId + "-"}RAL Kodu</Form.Label>
               <Form.Control
                 type="text"
-                placeholder="Enter RalCode"
+                placeholder="RAL kodunu giriniz"
                 value={ral_code}
                 onChange={(e) => setRalCode(e.target.value)}
               />
@@ -221,7 +221,7 @@ const AddProject = ({ onAdd }) => {
                 onClick={onSubmit}
                 className="mx-2"
               >
-                Save
+                Kaydet
               </Button>
               <Button
                 variant="primary"
@@ -229,7 +229,7 @@ const AddProject = ({ onAdd }) => {
                 onClick={() => onUpdate(projectId)}
                 className="mx-2"
               >
-                Update
+                Güncelle
               </Button>
             </div>
           </Form>
@@ -239,14 +239,14 @@ const AddProject = ({ onAdd }) => {
             <thead>
               <tr>
                 <th scope="col">#</th>
-                <th scope="col">Code</th>
-                <th scope="col">Project Name</th>
-                <th scope="col">Location</th>
-                <th scope="col">Area</th>
-                <th scope="col">Surface App</th>
-                <th scope="col">Point Area</th>
-                <th scope="col">Delivery Date</th>
-                <th scope="col">Ral Code</th>
+                <th scope="col">Proje Kodu</th>
+                <th scope="col">Proje Adı</th>
+                <th scope="col">Yer</th>
+                <th scope="col">Alan</th>
+                <th scope="col">Yüzey İşlemi</th>
+                <th scope="col">Boyama Yüzey Alanı</th>
+                <th scope="col">Teslim Tarihi</th>
+                <th scope="col">RAL Kodu</th>
                 <th scope="col">Pipe Time</th>
                 <th scope="col">Node Time</th>
                 <th scope="col">Point Time</th>
