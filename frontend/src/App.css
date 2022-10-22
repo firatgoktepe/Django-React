@@ -2,6 +2,29 @@
   text-align: center;
 }
 
+/* My custom css for subtitle at Shellbar */
+/* .fd-shellbar__subtitle{
+  font-size: 2.5rem !important;
+} */
+
+.titleStarter {
+  margin-bottom: 1.5rem;
+}
+
+@font-face {
+  font-family: "72";
+  src: url("../public/fonts/72Mono-Regular.ttf") format("woff"); /* Bold, Light, Regular available in woff and woff2 */
+  font-weight: normal;
+  font-style: normal;
+};
+
+@font-face {
+  font-family: "SAP-icons";
+  src: url("../public/fonts/SAP-icons.ttf") format("woff"); /* available in woff, woff2 and ttf */
+  font-weight: normal;
+  font-style: normal;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
