@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { ListGroup, Card, Button, Form } from "react-bootstrap";
 import API from "../API";
 import 'font-awesome/css/font-awesome.min.css';
+import Header from './Header'
 
 const AddProject = ({ onAdd }) => {
   const [projectId, setProjectId] = useState(null);
@@ -67,8 +68,13 @@ const AddProject = ({ onAdd }) => {
     setProjectId(item.id);
   }
 
+
   return (
     <div className="container mt-5">
+      
+      <Header />
+
+
       <div className="row">
         <div className="col-md-4">
           <h3 className="float-left">Yeni Proje Oluştur</h3>
