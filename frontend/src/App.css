@@ -11,6 +11,11 @@
   margin-bottom: 1.5rem;
 }
 
+a {
+  text-decoration: none !important;
+  color: black !important;
+}
+
 @font-face {
   font-family: "72";
   src: url("../public/fonts/72Mono-Regular.ttf") format("woff"); /* Bold, Light, Regular available in woff and woff2 */
