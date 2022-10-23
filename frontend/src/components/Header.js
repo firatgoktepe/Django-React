@@ -1,7 +1,7 @@
 import React from 'react'
 import { Shellbar } from 'fundamental-react/lib/Shellbar';
 import { Menu } from 'fundamental-react/lib/Menu';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Header = () => {
     const profile = {name: "Arda", lastName: "Arlı", initials: "AA", colorAccent: 20};
@@ -75,8 +75,8 @@ const Header = () => {
                 glyph: 'home'
             },
             {
-                
-                title: <Link to="/addproject">'Proje girişi yap'</Link>,
+                callback: () => navigate('/addproject'),
+                title: 'Proje girişi yap',
                 image: './assets/02.png',
                 glyph: 'cloud'
             },
@@ -126,7 +126,7 @@ const Header = () => {
                 callback: () => alert(`Seçildi!`),
                 title: 'Çıkış Yap',
                 image: './10.png',
-                glyph: 'area-chart'
+                glyph: 'workflow-tasks'
             },
             // {
             //     callback: () => console.log(`${this.title} selected!`),
