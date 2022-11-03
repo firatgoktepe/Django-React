@@ -1,4 +1,6 @@
-#!/Users/andersson/Desktop/tutorial/env/bin/python3
+#!/bin/sh
+'''exec' "/Users/andersson/Desktop/Arda Abiden/Django-React-tutorial latest/venv/bin/python3" "$0" "$@"
+' '''
 # -*- coding: utf-8 -*-
 import re
 import sys

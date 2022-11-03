@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 from pathlib import Path
 
+# import psycopg2.extensions
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -25,25 +27,21 @@ SECRET_KEY = 'django-insecure-!i%$=3kou)%(7k!)yk$k4uwlhcm((0b+^o686ig4vx*#)x-rtf
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.vercel.app', '127.0.0.1', 'localhost']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'rest_framework',
+    'corsheaders',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
-    #own
     'backend_api',
-
-    #third_party
-    'rest_framework',
-    'corsheaders',
 ]
 
 MIDDLEWARE = [
@@ -81,12 +79,39 @@ WSGI_APPLICATION = 'backend_project.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
+# DATABASES = {
+#     'default': {
+#     'ENGINE': 'django.db.backends.postgresql',
+#     'NAME': 'sap',
+#     'USER' : 'firatgoktepe',
+#     'PASSWORD' : '123456**',
+#     'HOST' : 'localhost',
+#     'PORT' : '5432',
+#     },
+#     # 'OPTIONS': {
+#     #     'isolation_level': psycopg2.extensions.ISOLATION_LEVEL_SERIALIZABLE,
+#     # },
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': "django.db.backends.postgresql_psycopg2",
+        'HOST': "db.pbbhaaaqoduksqqcnhvf.supabase.co",
+        'NAME': "postgres",
+        'USER': "postgres",
+        'PASSWORD': "Trtcbkkl2021@?:)",
+        'PORT': "5432",
+
     }
 }
+
 
 
 # Password validation
@@ -124,6 +149,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = 'static/'
+
+STATIC_ROOT = 'static'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
